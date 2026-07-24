@@ -31,7 +31,8 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         {children}
         <Script
-          src="https://appleid.cdn-apple.com/appleauth/static/js/postcapture/appleid.auth.js"
+          id="apple-auth-sdk"
+          src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js"
           strategy="afterInteractive"
         />
       </body>
